@@ -166,3 +166,22 @@ Connect frontend to backend
 Add privacy policy page
 
 Submit to TestFlight
+---
+
+# Anonymous Usage Model
+
+MVP allows anonymous lesson generation.
+
+Security controls:
+
+- IP-based rate limiting
+- Max 20 generations per IP per day
+- Max 5 generations per minute per IP
+- Token cap per request (2500 max)
+- Cached lessons returned when available
+- No direct Claude API exposure
+
+Future upgrade path:
+- Optional account system
+- Higher limits for authenticated users
+
